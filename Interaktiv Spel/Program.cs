@@ -15,6 +15,33 @@ string ljudet = Console.ReadLine();
 
 if (ljudet == "ja"){
     Console.WriteLine("När du kommer in i skogen bakom huset så ser du fisk, vill du gå tillbaka eller ringa polisen");
+   
+    string polisen = Console.ReadLine();
+
+    if (polisen == "ringa polisen"){
+    Console.WriteLine("Du berättar för polisen att du har hittat en fisk i skogen, men dom blir arga att du slösar deras tid och blir inlåst.  Game over");
+    Console.ReadLine();
+
+
+    return;
+}
+
+else if (polisen == "tillbaka"){
+    Console.WriteLine("Du fortsätter gå. Efter ett tag set du en hemlös man, han frågar om pengar. Vill du ge honom?");  
+    string curry = Console.ReadLine();
+
+    if (curry == "ja"){
+     Console.WriteLine("Han blir glad å du får curry å så lite RIZZ");
+    }
+    else if (curry == "nej"){
+        Console.WriteLine("Han blir arg och slår dig med en sengångare tills du dör, Game Over");
+        Console.ReadLine();
+        return;
+    }
+else{Console.WriteLine("Jag fattar inte vad du menar skriv igen");
+Console.ReadLine();
+}
+}
 }
 else if (ljudet == "nej"){
     Console.WriteLine("Du fortsätter gå. Efter ett tag set du en hemlös man, han frågar om pengar. Vill du ge honom?");
@@ -36,7 +63,8 @@ else if (curry1 == "nej"){
 else{Console.WriteLine("Jag fattar inte vad du menar skriv igen");
 Console.ReadLine();
 }
-string polisen = Console.ReadLine();
+
+/*string polisen = Console.ReadLine();
 
 if (polisen == "ringa polisen"){
     Console.WriteLine("Du berättar för polisen att du har hittat en fisk i skogen, men dom blir arga att du slösar deras tid och blir inlåst.  Game over");
@@ -46,13 +74,14 @@ if (polisen == "ringa polisen"){
 
 else if (polisen == "tillbaka"){
     Console.WriteLine("Du fortsätter gå. Efter ett tag set du en hemlös man, han frågar om pengar. Vill du ge honom?");
+    Console.ReadLine();
 }
 
-else {Console.WriteLine("Jag fattar inte vad du menar skriv igen");
+/*else {Console.WriteLine("Jag fattar inte vad du menar skriv igen");
 Console.ReadLine();
-}
+}*/
 
-string curry = Console.ReadLine();
+/*string curry = Console.ReadLine();
 
 if (curry == "ja"){
     Console.WriteLine("Han blir glad å du får curry å så lite RIZZ");
@@ -64,6 +93,6 @@ else if (curry == "nej"){
 }
 else{Console.WriteLine("Jag fattar inte vad du menar skriv igen");
 Console.ReadLine();
-}
+}*/
 
 Console.ReadLine();
